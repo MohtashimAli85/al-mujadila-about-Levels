@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lateef", cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  background: url("white-radial-gradient.jpg") no-repeat center;
+  background-size: cover;
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.verse {
+  width: 486px;
+  height: 456px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 13rem;
+}
+.translation {
+  width: max-content;
+  background-color: rgb(63, 199, 199);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 5px;
+  font-size: 25px;
+  opacity: 0;
+  /* Position the tooltip */
+  position: absolute;
+  /* bottom: 38%; */
+  bottom: 105%;
+  left: 10%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.v {
+  transition: 0.3s;
+}
+.v:hover {
+  color: rgb(63, 199, 199);
+  cursor: pointer;
+}
+.v:hover > .translation {
+  opacity: 1;
+}
+.v1 {
+  transform: translateY(2px);
+}
+.v2 {
+  transform: translateY(-13px);
+}
+.v3 {
+  transform: translateY(-45px);
+}
+.v4 {
+  transform: translateY(-68px);
+}
+.v5 {
+  transform: translateY(-100px);
+}
+.v6 {
+  transform: translateY(-127px);
+}
+.v7 {
+  transform: translateY(-149px);
+}
+.v8 {
+  transform: translateY(-180px);
+}
+.v9 {
+  transform: translateY(-213px);
+}
+@media screen and (max-width: 420px) {
+  body {
+    font-size: 1.5em;
+    height: 100vh;
+    margin-bottom: 10px;
+  }
+  .v9 {
+    transform: translateY(-208px);
+  }
+  .translation {
+    font-size: 13px;
+  }
+}
